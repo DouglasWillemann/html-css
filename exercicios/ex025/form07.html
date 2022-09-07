@@ -9,7 +9,7 @@
 
 <body>
     <h1>Exemplo de Formulário</h1>
-    <form action="#" method="get" autocomplete="on">
+    <form action="#" method="post" autocomplete="on">
         <p>
             <label for="iest">Estado:</label>
             <select name="estadoi" id="iest">
@@ -24,6 +24,11 @@
                     <option value="MA">Maranhão</option>
                     <option value="PE">Pernambuco</option>
                     <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+                <optgroup label="Região sul">
+                    <option value="PR">Paraná</option> 
+                    <option value="SC">Santa Cantarina</option>
+                    <option value="RG">Rio Grande do Sul</option>ption>
                 </optgroup>
 
             </select>
@@ -40,7 +45,7 @@
         </p>
         <p>
             <label for="imsg">Mensagem:</label> <br>
-            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="sua mensagem aqui..."></textarea>
         </p>
         <p>
             <input type="submit" value="Enviar">
